@@ -1,0 +1,33 @@
+Guide for EDSR Models
+*********************
+
+-------------------------------------------------------------------------------------------------
+This is a short guide on how to train and test the EDSR-based CNN models. The repository is based 
+on the official EDSR-PyTorch implementation (Enhanced Deep Residual Networks for Single Image 
+Super-Resolution, 2017) and keeps the overall structure as well as training and testing procedures. 
+For detailed explanations, visit https://github.com/sanghyun-son/EDSR-PyTorch.
+-------------------------------------------------------------------------------------------------
+
+
+- Go to 'esdr/src'. Run everything from this folder.
+
+- Create a conda environment using the file 'requirements.txt'.
+
+- Download the required datasets (DIV2K, Set5, Set14, Urban100)
+
+- The file 'options.py' contains all the arguments which are specified for the experiments.
+  Once the dataset is downloaded, you can set the '--dir_data' argument to the 
+  root path of the dataset. In this case, it was '/scratch_net/pengyou/alvinp/dataset'.
+
+- The 'demo.sh' file contains all the commands to train and test the models
+  which can be found in the report.
+
+- All the required model files and the reported models can be found in the folder 'pretrained_models'.
+
+- Here is a description of the model files:
+  - 'EDSR_X4.pt': Baseline EDSR X4 model file with 8 residual blocks.
+  - 'PA_EDSR_X4.pt': EDSR with Pyramid Attention, X4, 8 residual blocks.
+  - 'CA_EDSR_X4.pt': EDSR with Patch-based Correlation Attention, X4, 8 residual blocks.
+  - 'ESA_EDSR_X4.pt': EDSR with Enhanced Spatial Attention, X4, 8 residual blocks.
+  - 'NLESA_EDSR_X4.pt': EDSR with Non-Local Enhanced Spatial Attention, X4, 8 residual blocks.
+  - 'ESCA_EDSR_X4.pt': EDSR with Spatial Attention via Efficient Channel Attention, X4, 8 residual blocks.
