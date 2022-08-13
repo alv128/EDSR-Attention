@@ -8,6 +8,7 @@ import sys
 def make_model(args, parent=False):
     return CA_EDSR(args)
 
+#Network using residual blocks with channel attention
 class CA_EDSR(nn.Module):
     def __init__(self, args, conv=common.default_conv):
         super(CA_EDSR, self).__init__()
