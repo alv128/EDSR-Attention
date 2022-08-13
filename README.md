@@ -12,9 +12,9 @@ the pixelwise signal-to-noise ratio PSNR and the structural similarity index met
 GIVE SHORT EXPLANATION OF THE METRICS HERE.\
 
 Below table shows the results for Set5 and Set14, for x4 super-resolution.
-[//]: <> (![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true))
-[//]: <> (https://github.com/alv128/EDSR-Attention/blob/main//set5set14.png?raw=true) 
-![alt text](https://github.com/alv128/EDSR-Attention/blob/main/set5set14.png?raw=true
+[comment]: <> (![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true))
+[comment]: <> (https://github.com/alv128/EDSR-Attention/blob/main//set5set14.png?raw=true) 
+![](set5set14.png)
 
 Also, the results for the Urban100 dataset, which exposes images containing structures with a high-degree of self-similarity.
-![alt text](https://github.com/alv128/EDSR-Attention/blob/main/urban100.png?raw=true
+![](urban100.png)
