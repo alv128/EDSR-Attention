@@ -1,5 +1,5 @@
 # EDSR-Attention
-Experiments with EDSR models with attention modules
+Experiments on EDSR models with attention modules
 
 This repository contains models based on the enhanced deep residual networks for single image super-resolution \
 (EDSR), with the addition of various attention modules to improve the upscaling results. 
